@@ -27,7 +27,7 @@ points = [
     {"coords": (78184.42, 134319.82, -1343.64), "label": "Cathan's Journal [Ghornfell]", "key": "CathanJournal_Ghornfell"},
     {"coords": (71521.15, 124448.93, -263.95), "label": "Scorched Journal", "key": "Garou_D3"},
     {"coords": (105591.01, 130745.62, -662.41), "label": "Leaf-scented Page", "key": "Abyssal_F2"},
-    {"coords": (124886.21, 136676.65, -1276.04), "label": "Bloodstained Page", "key": "Abyssal_F2"},
+    {"coords": (124886.21, 136676.65, -1276.04), "label": "Bloodstained Page", "key": "Abyssal_F1"},
     {"coords": (138421.51, 76160.98, 4362.87), "label": "Infused Journal", "key": "Dragonkin_E3"},
     {"coords": (140829.65, 123526.97, -26.60), "label": "Dragonkin Notebook Page", "key": "Dragonkin_E4"},
     {"coords": (33581.73, 99721.81, 7101.04), "label": "Leathery Parchment", "key": "Garou_D4"},
