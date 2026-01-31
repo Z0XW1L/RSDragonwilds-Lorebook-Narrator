@@ -1,46 +1,48 @@
 # RSDragonwilds Lore Narrator
 
-## Overview
+# Overview
+Tired of reading Lore Books? Want to know more about the story but reading all the books is so time intensive?? Time that you would rather spend logging trees??!! Then this Mod is for you. Just open the book, walk away and let the lore be poured into your ears while you squash some Kebbits and roast them over the fire.
 
-A RuneScape: Dragonwilds mod that provides voice narration for lore locations throughout the game world. The narrator reads contextual lore and background information when players visit specific in-game locations, creating an immersive storytelling experience.
+The narration is based on a Text-To-Speech algorithm with open-source speeech samples used for voice cloning.
 
-> **Attention:** As of now, the narration does not include Lorebooks in Fellhollow as I have not explored this area yet and did not want to spoil the fun for me. As soon as my character is able to advance into this territory, the narration will be added!
+# Installation
+- Install UE4SS (link in Requirements), Download the Mod﻿
+- Extract the contents of the archive to your RuneScape game installation directory (like "C:\Program Files (x86)\Steam\steamapps\common\RSDragonwilds").
+- Launch the game and the mod will begin playing audio when opening a lore book.
 
-> **Attention 2:** I did not extensively test if the narration matches with the actual lorebooks. So it could be that there are some slight mistakes. If you find any, please tell me and I will fix it.
+# Features
+- Audio Narration (Base Area) - Base area is covered
+- Audio Narration (Fellhollow) - Some Lorebooks inside dungeons have not been narrated as of now
+    Voices
+   - MedievalSpeech﻿ (LoreNarratorMod_MedievalSpeech_Male_En_v1_1)
+   - Asya Anara (LoreNarratorMod_AsyraAnara_Female_En_v1_1)
 
-## Installation
 
-1. Download the newest `RSDragonwilds` release of this repository
-2. Extract `RSDragonwilds.zip` to your RuneScape game installation directory
-3. Edit your `RSDragonwilds\Binaries\Win64\ue4ss\Mods\mods.json` settings file and add the following configuration to the end of the array:
-   ```json
-   {
-       "mod_name": "LoreNarratorMod",
-       "mod_enabled": true
-   }
-   ```
-4. Edit your `RSDragonwilds\Binaries\Win64\ue4ss\Mods\mods.txt` settings file and add the following configuration to the end of the file:
-   ```ini
-   LoreNarratorMod : 1
-   ```
-5. Launch the game and the narrator will begin playing contextual audio at designated lore locations
+# Planned Features
 
-## Features
+- Audio queue management - Prevent overlapping audio playback when visiting multiple locations in quick succession or reopening books
 
-- **Location-based narration** - Audio plays automatically when you visit 30 distinct lore locations
-- **High-quality voice acting** - Professional English narration from various voice actors
-- **Immersive storytelling** - Lore content expands on the game's world-building and character backgrounds
 
-## Planned Features
+# Possible Future Features
 
-- **Audio queue management** - Prevent overlapping audio playback when visiting multiple locations in quick succession
-- **Proximity Based Playing** - Play the lore when being near to a lore book without opening it
-- **More Languages** - Mod in different languages
-- **More Voices** - Adding more voice choices for narration
-- **Additional lore locations**
-- **Additional Settings**
+- More Languages - Mod in different languages
+- More Voices - Adding more voice choices for narration
+- Proximity Based Playing - Play the lore when being near to a lore book without opening it
+- Configurable Settings - Play Distance, etc.
+- Re-Play, Pause and Continue Shortcuts - In case you want to listen again
+- UI-Indication that shows the time left talking (0 - 100%)
 
-## Credits
+# Credits
 
-- The narration has been done with [coqui-ai-TTS](https://github.com/coqui-ai/TTS)
-- The narration is based on a voice clone from [NPC Faras (Greetings)](https://freesound.org/sounds/731604/)
+- The narration has been done with coqui-ai-TTS
+- The narration is based on voice clones from
+   - MedievalSpeech.wav by tekgnosis -- https://freesound.org/s/144862/ -- License: Creative Commons 0
+   - Asya Anara -- https://huggingface.co/coqui/XTTS-v2
+
+# Project Overview
+
+# ModActor
+![alt text](doc/images/ModActor_PlayLore.png)
+
+## LoreLib
+![alt text](doc/images/LoreLib_GetClosestItem.png)
