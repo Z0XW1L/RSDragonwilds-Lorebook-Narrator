@@ -2,7 +2,7 @@
     "Tagged": [
         [
             "Struct.LoreCoords",
-            "(((X=15511.870000,Y=178838.080000,Z=-2662.060000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/CathanJournal_Vannaka.CathanJournal_Vannaka'\"),((X=13009.770000,Y=192183.180000,Z=-3076.790000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DragonAttack_A3.DragonAttack_A3'\"),((X=5158.740000,Y=190522.330000,Z=-3152.060000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DragonAttack_A1.DragonAttack_A1'\"),((X=31204.240000,Y=163832.160000,Z=-857.150000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Guthix_C3.Guthix_C3'\"),((X=29118.590000,Y=156991.250000,Z=-795.240000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Guthix_C4.Guthix_C4'\"),((X=19773.880000,Y=173386.000000,Z=-1209.760000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DragonAttack_A2.DragonAttack_A2'\"),((X=48282.270000,Y=177692.720000,Z=-4126.380000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Goblin_B4.Goblin_B4'\"),((X=73772.440000,Y=186935.550000,Z=649.790000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DragonAttack_A5.DragonAttack_A5'\"),((X=68968.640000,Y=178598.080000,Z=-344.810000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Goblin_B2.Goblin_B2'\"),((X=61409.370000,Y=160992.440000,Z=4280.250000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/CathanJournal_Castle_Content.CathanJournal_Castle_Content'\"),((X=63040.000000,Y=160405.000000,Z=3415.000000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/CastleExtra_2.CastleExtra_2'\"),((X=61445.000000,Y=159035.000000,Z=2935.000000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/CastleExtra_1.CastleExtra_1'\"),((X=50467.020000,Y=153659.060000,Z=967.730000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Guthix_C5.Guthix_C5'\"),((X=62614.220000,Y=172179.390000,Z=-1233.970000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Guthix_C2.Guthix_C2'\"),((X=52153.230000,Y=172030.700000,Z=-3823.280000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DragonAttack_A4.DragonAttack_A4'\"),((X=55318.520000,Y=126503.590000,Z=2659.440000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Garou_D2.Garou_D2'\"),((X=68009.060000,Y=135975.210000,Z=-1089.970000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Garou_D1.Garou_D1'\"),((X=85904.180000,Y=162732.880000,Z=237.220000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Goblin_B3.Goblin_B3'\"),((X=81422.860000,Y=173925.760000,Z=759.930000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Goblin_B1.Goblin_B1'\"),((X=79928.540000,Y=153565.390000,Z=1696.580000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Goblin_B5.Goblin_B5'\"),((X=87042.540000,Y=133040.860000,Z=-1331.810000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Garou_D5.Garou_D5'\"),((X=94588.200000,Y=127362.550000,Z=714.950000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Dragonkin_E1.Dragonkin_E1'\"),((X=78184.420000,Y=134319.820000,Z=-1343.640000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/CathanJournal_Ghornfell.CathanJournal_Ghornfell'\"),((X=71521.150000,Y=124448.930000,Z=-263.950000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Garou_D3.Garou_D3'\"),((X=105591.010000,Y=130745.620000,Z=-662.410000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Abyssal_F2.Abyssal_F2'\"),((X=124886.210000,Y=136676.650000,Z=-1276.040000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Abyssal_F1.Abyssal_F1'\"),((X=138421.510000,Y=76160.980000,Z=4362.870000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Dragonkin_E3.Dragonkin_E3'\"),((X=140829.650000,Y=123526.970000,Z=-26.600000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Dragonkin_E4.Dragonkin_E4'\"),((X=33581.730000,Y=99721.810000,Z=7101.040000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Garou_D4.Garou_D4'\"),((X=25979.110000,Y=99944.110000,Z=7927.890000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DogDays_RitualText.DogDays_RitualText'\"),((X=19144.770000,Y=72491.170000,Z=14987.820000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Dragonkin_E2.Dragonkin_E2'\"),((X=132249.110000,Y=30610.750000,Z=-4076.610000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_1.Fellhollow_Necromancer_1'\"),((X=133234.030000,Y=25634.790000,Z=-4582.180000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6.Fellhollow_Withering_6'\"),((X=136002.690000,Y=5285.600000,Z=-3657.030000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_3.Fellhollow_Necromancer_3'\"),((X=129346.820000,Y=-20226.770000,Z=-7417.770000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_RisingDead_1.Fellhollow_RisingDead_1'\"),((X=151791.520000,Y=-29479.770000,Z=-11949.610000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6.Fellhollow_Withering_6'\"),((X=165792.900000,Y=-50608.960000,Z=-12300.940000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_4.Fellhollow_Necromancer_4'\"),((X=141002.730000,Y=-44138.250000,Z=-7101.240000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_4.Fellhollow_Withering_4'\"),((X=112897.130000,Y=-36564.960000,Z=-7377.870000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_5.Fellhollow_Withering_5'\"),((X=129159.890000,Y=-64598.760000,Z=-6727.840000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_7.Fellhollow_Necromancer_7'\"),((X=139716.570000,Y=-56387.630000,Z=-7309.970000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_5.Fellhollow_Necromancer_5'\"),((X=183590.300000,Y=-71401.740000,Z=-11666.780000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonkin_1.Fellhollow_Dragonkin_1'\"),((X=157079.980000,Y=-57241.760000,Z=-12342.030000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6.Fellhollow_Withering_6'\"),((X=200467.710000,Y=-74865.470000,Z=-10352.680000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonwolves_1.Fellhollow_Dragonwolves_1'\"),((X=185933.820000,Y=-31739.820000,Z=-12100.480000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonkin_4.Fellhollow_Dragonkin_4'\"))"
+            "(((X=15511.870000,Y=178838.080000,Z=-2662.060000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/CathanJournal_Vannaka.CathanJournal_Vannaka'\"),((X=13009.770000,Y=192183.180000,Z=-3076.790000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DragonAttack_A3.DragonAttack_A3'\"),((X=5158.740000,Y=190522.330000,Z=-3152.060000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DragonAttack_A1.DragonAttack_A1'\"),((X=31204.240000,Y=163832.160000,Z=-857.150000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Guthix_C3.Guthix_C3'\"),((X=29118.590000,Y=156991.250000,Z=-795.240000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Guthix_C4.Guthix_C4'\"),((X=19773.880000,Y=173386.000000,Z=-1209.760000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DragonAttack_A2.DragonAttack_A2'\"),((X=48282.270000,Y=177692.720000,Z=-4126.380000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Goblin_B4.Goblin_B4'\"),((X=73772.440000,Y=186935.550000,Z=649.790000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DragonAttack_A5.DragonAttack_A5'\"),((X=68968.640000,Y=178598.080000,Z=-344.810000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Goblin_B2.Goblin_B2'\"),((X=61409.370000,Y=160992.440000,Z=4280.250000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/CathanJournal_Castle_Content.CathanJournal_Castle_Content'\"),((X=63040.000000,Y=160405.000000,Z=3415.000000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/CastleExtra_2.CastleExtra_2'\"),((X=61445.000000,Y=159035.000000,Z=2935.000000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/CastleExtra_1.CastleExtra_1'\"),((X=50467.020000,Y=153659.060000,Z=967.730000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Guthix_C5.Guthix_C5'\"),((X=62614.220000,Y=172179.390000,Z=-1233.970000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Guthix_C2.Guthix_C2'\"),((X=52153.230000,Y=172030.700000,Z=-3823.280000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DragonAttack_A4.DragonAttack_A4'\"),((X=55318.520000,Y=126503.590000,Z=2659.440000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Garou_D2.Garou_D2'\"),((X=68009.060000,Y=135975.210000,Z=-1089.970000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Garou_D1.Garou_D1'\"),((X=85904.180000,Y=162732.880000,Z=237.220000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Goblin_B3.Goblin_B3'\"),((X=81422.860000,Y=173925.760000,Z=759.930000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Goblin_B1.Goblin_B1'\"),((X=79928.540000,Y=153565.390000,Z=1696.580000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Goblin_B5.Goblin_B5'\"),((X=87042.540000,Y=133040.860000,Z=-1331.810000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Garou_D5.Garou_D5'\"),((X=94588.200000,Y=127362.550000,Z=714.950000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Dragonkin_E1.Dragonkin_E1'\"),((X=78184.420000,Y=134319.820000,Z=-1343.640000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/CathanJournal_Ghornfell.CathanJournal_Ghornfell'\"),((X=71521.150000,Y=124448.930000,Z=-263.950000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Garou_D3.Garou_D3'\"),((X=105591.010000,Y=130745.620000,Z=-662.410000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Abyssal_F2.Abyssal_F2'\"),((X=124886.210000,Y=136676.650000,Z=-1276.040000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Abyssal_F1.Abyssal_F1'\"),((X=138421.510000,Y=76160.980000,Z=4362.870000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Dragonkin_E3.Dragonkin_E3'\"),((X=140829.650000,Y=123526.970000,Z=-26.600000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Dragonkin_E4.Dragonkin_E4'\"),((X=33581.730000,Y=99721.810000,Z=7101.040000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Garou_D4.Garou_D4'\"),((X=25979.110000,Y=99944.110000,Z=7927.890000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/DogDays_RitualText.DogDays_RitualText'\"),((X=19144.770000,Y=72491.170000,Z=14987.820000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Dragonkin_E2.Dragonkin_E2'\"),((X=132249.110000,Y=30610.750000,Z=-4076.610000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_1.Fellhollow_Necromancer_1'\"),((X=133234.030000,Y=25634.790000,Z=-4582.180000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6.Fellhollow_Withering_6'\"),((X=136002.690000,Y=5285.600000,Z=-3657.030000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_3.Fellhollow_Necromancer_3'\"),((X=129346.820000,Y=-20226.770000,Z=-7417.770000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_RisingDead_1.Fellhollow_RisingDead_1'\"),((X=151791.520000,Y=-29479.770000,Z=-11949.610000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6.Fellhollow_Withering_6'\"),((X=165792.900000,Y=-50608.960000,Z=-12300.940000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_4.Fellhollow_Necromancer_4'\"),((X=141002.730000,Y=-44138.250000,Z=-7101.240000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_4.Fellhollow_Withering_4'\"),((X=112897.130000,Y=-36564.960000,Z=-7377.870000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_5.Fellhollow_Withering_5'\"),((X=129159.890000,Y=-64598.760000,Z=-6727.840000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_7.Fellhollow_Necromancer_7'\"),((X=139716.570000,Y=-56387.630000,Z=-7309.970000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_5.Fellhollow_Necromancer_5'\"),((X=183590.300000,Y=-71401.740000,Z=-11666.780000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonkin_1.Fellhollow_Dragonkin_1'\"),((X=157079.980000,Y=-57241.760000,Z=-12342.030000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6.Fellhollow_Withering_6'\"),((X=200467.710000,Y=-74865.470000,Z=-10352.680000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonwolves_1.Fellhollow_Dragonwolves_1'\"),((X=185933.820000,Y=-31739.820000,Z=-12100.480000), \"/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonkin_4.Fellhollow_Dragonkin_4'\"),((X=1.000000,Y=0.000000,Z=0.000000), None),((X=2.000000,Y=0.000000,Z=0.000000), None),((X=3.000000,Y=0.000000,Z=0.000000), None),((X=4.000000,Y=0.000000,Z=0.000000), None),((X=5.000000,Y=0.000000,Z=0.000000), None),((X=6.000000,Y=0.000000,Z=0.000000), None),((X=7.000000,Y=0.000000,Z=0.000000), None))"
         ],
         [
             "Struct.LoreCoords.LoreCoords[0]",
@@ -802,347 +802,87 @@
         ],
         [
             "Struct.LoreCoords.LoreCoords_Value[39]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_7'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[40]",
-            "(X=139716.570000,Y=-56387.630000,Z=-7309.970000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[40].X",
-            "139716.570000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[40].Y",
-            "-56387.630000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[40].Z",
-            "-7309.970000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[40]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_5'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[41]",
-            "(X=183590.300000,Y=-71401.740000,Z=-11666.780000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[41].X",
-            "183590.300000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[41].Y",
-            "-71401.740000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[41].Z",
-            "-11666.780000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[41]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonkin_1'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[42]",
-            "(X=200467.710000,Y=-74865.470000,Z=-10352.680000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[42].X",
-            "200467.710000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[42].Y",
-            "-74865.470000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[42].Z",
-            "-10352.680000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[42]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonwolves_1.Fellhollow_Dragonwolves_1'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[30]",
-            "(X=132249.110000,Y=30610.750000,Z=-4076.610000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[30].X",
-            "132249.110000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[30].Y",
-            "30610.750000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[30].Z",
-            "-4076.610000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[30]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_1.Fellhollow_Necromancer_1'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[31]",
-            "(X=133234.030000,Y=25634.790000,Z=-4582.180000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[31].X",
-            "133234.030000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[31].Y",
-            "25634.790000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[31].Z",
-            "-4582.180000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[31]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6.Fellhollow_Withering_6'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[32]",
-            "(X=136002.690000,Y=5285.600000,Z=-3657.030000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[32].X",
-            "136002.690000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[32].Y",
-            "5285.600000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[32].Z",
-            "-3657.030000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[32]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_3.Fellhollow_Necromancer_3'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[33]",
-            "(X=129346.820000,Y=-20226.770000,Z=-7417.770000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[33].X",
-            "129346.820000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[33].Y",
-            "-20226.770000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[33].Z",
-            "-7417.770000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[33]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_RisingDead_1.Fellhollow_RisingDead_1'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[34]",
-            "(X=151791.520000,Y=-29479.770000,Z=-11949.610000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[34].X",
-            "151791.520000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[34].Y",
-            "-29479.770000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[34].Z",
-            "-11949.610000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[34]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6.Fellhollow_Withering_6'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[35]",
-            "(X=165792.900000,Y=-50608.960000,Z=-12300.940000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[35].X",
-            "165792.900000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[35].Y",
-            "-50608.960000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[35].Z",
-            "-12300.940000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[35]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_4.Fellhollow_Necromancer_4'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[36]",
-            "(X=141002.730000,Y=-44138.250000,Z=-7101.240000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[36].X",
-            "141002.730000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[36].Y",
-            "-44138.250000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[36].Z",
-            "-7101.240000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[36]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_4.Fellhollow_Withering_4'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[37]",
-            "(X=112897.130000,Y=-36564.960000,Z=-7377.870000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[37].X",
-            "112897.130000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[37].Y",
-            "-36564.960000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[37].Z",
-            "-7377.870000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[37]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_5.Fellhollow_Withering_5'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[38]",
-            "(X=129159.890000,Y=-64598.760000,Z=-6727.840000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[38].X",
-            "129159.890000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[38].Y",
-            "-64598.760000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[38].Z",
-            "-6727.840000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[38]",
             "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_7.Fellhollow_Necromancer_7'"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[39]",
+            "Struct.LoreCoords.LoreCoords[40]",
             "(X=139716.570000,Y=-56387.630000,Z=-7309.970000)"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[39].X",
+            "Struct.LoreCoords.LoreCoords[40].X",
             "139716.570000"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[39].Y",
+            "Struct.LoreCoords.LoreCoords[40].Y",
             "-56387.630000"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[39].Z",
+            "Struct.LoreCoords.LoreCoords[40].Z",
             "-7309.970000"
         ],
         [
-            "Struct.LoreCoords.LoreCoords_Value[39]",
+            "Struct.LoreCoords.LoreCoords_Value[40]",
             "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Necromancer_5.Fellhollow_Necromancer_5'"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[40]",
+            "Struct.LoreCoords.LoreCoords[41]",
             "(X=183590.300000,Y=-71401.740000,Z=-11666.780000)"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[40].X",
+            "Struct.LoreCoords.LoreCoords[41].X",
             "183590.300000"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[40].Y",
+            "Struct.LoreCoords.LoreCoords[41].Y",
             "-71401.740000"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[40].Z",
+            "Struct.LoreCoords.LoreCoords[41].Z",
             "-11666.780000"
         ],
         [
-            "Struct.LoreCoords.LoreCoords_Value[40]",
+            "Struct.LoreCoords.LoreCoords_Value[41]",
             "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonkin_1.Fellhollow_Dragonkin_1'"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[41]",
-            "(X=157079.980000,Y=-57241.760000,Z=-12342.030000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[41].X",
-            "157079.980000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[41].Y",
-            "-57241.760000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[41].Z",
-            "-12342.030000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[41]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6'"
-        ],
-        [
             "Struct.LoreCoords.LoreCoords[42]",
-            "(X=200467.710000,Y=-74865.470000,Z=-10352.680000)"
+            "(X=157079.980000,Y=-57241.760000,Z=-12342.030000)"
         ],
         [
             "Struct.LoreCoords.LoreCoords[42].X",
-            "200467.710000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[42].Y",
-            "-74865.470000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[42].Z",
-            "-10352.680000"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords_Value[42]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonwolves_1'"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[43]",
-            "(X=157079.980000,Y=-57241.760000,Z=-12342.030000)"
-        ],
-        [
-            "Struct.LoreCoords.LoreCoords[43].X",
             "157079.980000"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[43].Y",
+            "Struct.LoreCoords.LoreCoords[42].Y",
             "-57241.760000"
         ],
         [
-            "Struct.LoreCoords.LoreCoords[43].Z",
+            "Struct.LoreCoords.LoreCoords[42].Z",
             "-12342.030000"
         ],
         [
+            "Struct.LoreCoords.LoreCoords_Value[42]",
+            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6.Fellhollow_Withering_6'"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[43]",
+            "(X=200467.710000,Y=-74865.470000,Z=-10352.680000)"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[43].X",
+            "200467.710000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[43].Y",
+            "-74865.470000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[43].Z",
+            "-10352.680000"
+        ],
+        [
             "Struct.LoreCoords.LoreCoords_Value[43]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Withering_6'"
+            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonwolves_1.Fellhollow_Dragonwolves_1'"
         ],
         [
             "Struct.LoreCoords.LoreCoords[44]",
@@ -1162,7 +902,147 @@
         ],
         [
             "Struct.LoreCoords.LoreCoords_Value[44]",
-            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonkin_4'"
+            "/Script/Engine.SoundWave'/Game/Mods/LoreNarratorMod/Sound/Narrator/Fellhollow_Dragonkin_4.Fellhollow_Dragonkin_4'"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[45]",
+            "(X=1.000000,Y=0.000000,Z=0.000000)"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[45].X",
+            "1.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[45].Y",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[45].Z",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords_Value[45]",
+            "None"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[46]",
+            "(X=2.000000,Y=0.000000,Z=0.000000)"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[46].X",
+            "2.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[46].Y",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[46].Z",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords_Value[46]",
+            "None"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[47]",
+            "(X=3.000000,Y=0.000000,Z=0.000000)"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[47].X",
+            "3.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[47].Y",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[47].Z",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords_Value[47]",
+            "None"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[48]",
+            "(X=4.000000,Y=0.000000,Z=0.000000)"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[48].X",
+            "4.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[48].Y",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[48].Z",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords_Value[48]",
+            "None"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[49]",
+            "(X=5.000000,Y=0.000000,Z=0.000000)"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[49].X",
+            "5.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[49].Y",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[49].Z",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords_Value[49]",
+            "None"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[50]",
+            "(X=6.000000,Y=0.000000,Z=0.000000)"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[50].X",
+            "6.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[50].Y",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[50].Z",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords_Value[50]",
+            "None"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[51]",
+            "(X=7.000000,Y=0.000000,Z=0.000000)"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[51].X",
+            "7.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[51].Y",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords[51].Z",
+            "0.000000"
+        ],
+        [
+            "Struct.LoreCoords.LoreCoords_Value[51]",
+            "None"
         ]
     ]
 }
