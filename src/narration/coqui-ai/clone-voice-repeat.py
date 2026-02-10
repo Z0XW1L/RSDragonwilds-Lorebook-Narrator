@@ -27,11 +27,11 @@ speaker_wav = "./src/narration/coqui-ai/voices/144862__tekgnosis__medievalspeech
 speaker = speaker_wav.split('/')[-1].replace('.wav', '')
 
 # Create output directory
-output_dir = f"./src/narration/coqui-ai/output/{speaker}/narration"
+output_dir = f"./src/narration/coqui-ai/output/{speaker}/repeat"
 os.makedirs(output_dir, exist_ok=True)
 
 # Get JSON input from narrators.json file
-with open("./src/narration/narrator_pruned.json", "r", encoding="utf-8") as f:
+with open("./src/narration/narrator_repeat.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Generate audio for each entry

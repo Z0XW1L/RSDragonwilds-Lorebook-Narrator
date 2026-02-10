@@ -19,11 +19,9 @@ from TTS.api import TTS
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
-print(tts.speakers)
-print("\n")
 
 # Extract speaker name from speaker_wav
-speaker_wav = "./src/narration/coqui-ai/voices/144862__tekgnosis__medievalspeech.wav"
+speaker_wav = "./src/narration/coqui-ai/voices/Asya Anara.wav"
 speaker = speaker_wav.split('/')[-1].replace('.wav', '')
 
 # Create output directory
@@ -47,8 +45,8 @@ for key, text in data.items():
     
     tts.tts_to_file(
         text=text,
-        speaker_wav=speaker_wav,
-        # speaker=speaker, # Asya Anara, Gilberto Mathias, Damian Black +
+        # speaker_wav=speaker_wav,
+        speaker=speaker, # Asya Anara, Gilberto Mathias, Damian Black +
         language="en",
         speed=1.0,
         file_path=file_path,

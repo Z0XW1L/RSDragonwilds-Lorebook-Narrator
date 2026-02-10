@@ -35,11 +35,13 @@ points = [
     {"coords": (33581.73, 99721.81, 7101.04), "label": "Leathery Parchment", "key": "Garou_D4"},
     {"coords": (25979.11, 99944.11, 7927.89), "label": "Ritual of Purification", "key": "DogDays_RitualText"},
     {"coords": (19144.77, 72491.17, 14987.82), "label": "Dragonkin Diary Page", "key": "Dragonkin_E2"},
+
+    # Fellhollow
     {"coords": (132249.11, 30610.75, -4076.61), "label": "Ravanna's First Journal", "key": "Fellhollow_Necromancer_1"},
     {"coords": (133234.03, 25634.79, -4582.18), "label": "Weathered Diary", "key": "Fellhollow_Withering_1"},
     {"coords": (136002.69, 5285.60, -3657.03), "label": "Ravanna's Third Journal", "key": "Fellhollow_Necromancer_3"},
-    {"coords": (129346.82, -20226.77, -7417.77), "label": "Mould-Covered Journal", "key": "Fellhollow_RisingDead_1"},
-    {"coords": (151791.52, -29479.77, -11949.61), "label": "Unknown", "key": ""},
+    {"coords": (129346.82, -20226.77, -7417.77), "label": "Mould-covered Journal", "key": "Fellhollow_RisingDead_1"},
+    {"coords": (151791.52, -29479.766, -11949.615), "label": "Withered Diary", "key": "Fellhollow_Withering_6"},
     {"coords": (165792.90, -50608.96, -12300.94), "label": "Ravanna's Fourth Journal", "key": "Fellhollow_Necromancer_4"},
     {"coords": (141002.73, -44138.25, -7101.24), "label": "Battered Diary", "key": "Fellhollow_Withering_4"},
     {"coords": (112897.13, -36564.96, -7377.87), "label": "Weathered Journal", "key": "Fellhollow_Withering_5"},
@@ -58,16 +60,18 @@ points = [
     {"coords": (86217.37, -62653.96, -6678.24), "label": "The Tale of the Ghost Wolves", "key": "Fellhollow_Dragonwolves_3"},
     {"coords": (237084.07, -42754.53, 6542.99), "label": "Captain Rainer's Journal", "key": "Fellhollow_Zogre_3"},
     {"coords": (235251.53, -32350.35, 1670.65), "label": "Red-Stained Diary", "key": "Fellhollow_RisingDead_4"},
- 
     {"coords": (157079.98, -57241.76, -12342.03), "label": "Withered Journal", "key": "Fellhollow_RisingDead_2"},
+    {"coords": (-479341.56, -462496.56, -40657.0), "label": "Lacrussa's Writings", "key": "Fellhollow_Dragonkin_4"},
+    {"coords": (238732.16, -32221.887, 4468.674), "label": "Soot-stained Journal", "key": "Fellhollow_The_Rising_Dead_3"},
 
     # in Dungeons
     {"coords": (-468570.89, -310195.92, -37327.00), "label": "Lacrussa's Notes", "key": "Fellhollow_Dragonkin_2"},
     {"coords": (-455929.76, -325534.06, -37962.00), "label": "Lacrussa's Memoir", "key": "Fellhollow_VaultPuzzle_1"},
-    {"coords": (-454559.45, -313086.74, -37548.00), "label": "Unknown 2", "key": ""},  
-    
+    {"coords": (-454559.44, -313086.75, -37548.0), "label": "Lacrussa's Diary", "key": "Fellhollow_Dragonkin_5"},
     {"coords":(-322000.00, -469377.00, -38528.00), "label": "Rot-Covered Journal", "key": "Fellhollow_VaultPuzzle_2"},  # I am lost in these tretcherous ....
-    {"coords": (-321150.55, -463399.65, -37377.95), "label": "Unknown 3", "key": ""},  
+    {"coords": (-321150.56, -463399.66, -37377.945), "label": "Lacrussa's Ravings", "key": "Fellhollow_Dragonkin_3"},
+
+
 ]
 
 
