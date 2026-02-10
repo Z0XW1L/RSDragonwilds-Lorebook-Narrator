@@ -20,8 +20,3 @@ Export/
 Content/__ExternalActors__
 Content/__ExternalObjects__
 Content/Mods/LoreNarratorMod/Sound
-
-# autosave and crash junk
-Saved/Autosaves/
-Saved/Crashes/
-Saved/Logs/
