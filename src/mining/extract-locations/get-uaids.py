@@ -14,13 +14,14 @@ def extract_name_from_path(asset_path: str) -> str:
     return asset_path.split("/")[-1]
 
 
-def transform_key(key: str) -> str:
+def transform_key(key: str, prefix: str) -> str:
     """
     Transform a key by extracting just the relevant part after the prefix.
     Example: "JOURNAL_Know_LoreScrap_C1.JOURNAL_Know_LoreScrap_C1" → "LoreScrap_C1"
     
     Args:
         key: The full key string
+        prefix: The prefix to remove
         
     Returns:
         The transformed key with prefix removed
@@ -28,9 +29,9 @@ def transform_key(key: str) -> str:
     # Extract the part before the first dot
     part = key.split(".")[0]
     
-    # Remove the "JOURNAL_Know_" prefix if present
-    if part.startswith("JOURNAL_Know_"):
-        return part[len("JOURNAL_Know_"):]
+    # Remove the specified prefix if present
+    if part.startswith(prefix):
+        return part[len(prefix):]
     
     return part
 
@@ -157,12 +158,12 @@ if __name__ == "__main__":
     
     # Extract all journal entries automatically, filtered to only JOURNAL_Know_ entries
     print("=== All Journal Entry Keys (JOURNAL_Know_ only) ===\n")
-    journal_entries = find_all_journal_entries(folder, filter_contains="JOURNAL_Know_")
+    journal_entries = find_all_journal_entries(folder, filter_contains="JOURNAL_XMarksTheSpot")
     
     # Output in JSON format with transformed keys
     print(f"Found {sum(len(entries) for entries in journal_entries.values())} entries across {len(journal_entries)} unique keys.\n")
     for key, entries in sorted(journal_entries.items()):
-        transformed_key = transform_key(key)
+        transformed_key = key #transform_key(key, "JOURNAL_XMarksTheSpot")
         for entry in entries:
             print(f"{{\"key\": \"{transformed_key}\", \"label\": \"{entry['label']}\", \"value\": \"{entry['uaid']}\"}},")
     
