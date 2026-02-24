@@ -1,6 +1,105 @@
-import json
+﻿import json
 import os
 from typing import Iterable, Dict, List
+
+
+def extract_name_from_path(asset_path: str) -> str:
+    """
+    Extract the name part from an AssetPathName.
+    Example: "/Game/UI/JournalData/Entries/Knowledge/LoreScraps/JOURNAL_Know_Zogres_1.JOURNAL_Know_Zogres_1"
+    Returns: "JOURNAL_Know_Zogres_1.JOURNAL_Know_Zogres_1"
+    """
+    if not asset_path:
+        return ""
+    return asset_path.split("/")[-1]
+
+
+def transform_key(key: str) -> str:
+    """
+    Transform a key by extracting just the relevant part after the prefix.
+    Example: "JOURNAL_Know_LoreScrap_C1.JOURNAL_Know_LoreScrap_C1" → "LoreScrap_C1"
+    
+    Args:
+        key: The full key string
+        
+    Returns:
+        The transformed key with prefix removed
+    """
+    # Extract the part before the first dot
+    part = key.split(".")[0]
+    
+    # Remove the "JOURNAL_Know_" prefix if present
+    if part.startswith("JOURNAL_Know_"):
+        return part[len("JOURNAL_Know_"):]
+    
+    return part
+
+
+def find_all_journal_entries(folder_path: str, filter_contains: str = None) -> Dict[str, List[Dict[str, str]]]:
+    """
+    Scan all JSON files and extract all AssetPathName entries as keys.
+    Returns a dict mapping extracted names to lists of {label, uaid} entries.
+    
+    Args:
+        folder_path: Path to the folder containing JSON files
+        filter_contains: Optional filter string. Only includes entries whose keys contain this string.
+    """
+    results = {}
+
+    for filename in os.listdir(folder_path):
+        if not filename.lower().endswith(".json"):
+            continue
+
+        file_path = os.path.join(folder_path, filename)
+
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            continue  # skip unreadable or invalid JSON
+
+        if not isinstance(data, list):
+            continue
+
+        for obj in data:
+            if not isinstance(obj, dict):
+                continue
+
+            uaid = obj.get("Name")
+            if not uaid:
+                continue
+
+            properties = obj.get("Properties", {})
+            if not isinstance(properties, dict):
+                continue
+
+            # Scan all properties for AssetPathName entries
+            for prop_name, prop_value in properties.items():
+                if not isinstance(prop_value, dict):
+                    continue
+
+                asset_path = prop_value.get("AssetPathName")
+                if not isinstance(asset_path, str) or not asset_path:
+                    continue
+
+                # Extract the name part from the path
+                key = extract_name_from_path(asset_path)
+                if not key:
+                    continue
+
+                # Apply filter if specified
+                if filter_contains and filter_contains not in key:
+                    continue
+
+                if key not in results:
+                    results[key] = []
+
+                results[key].append({
+                    "label": prop_name,
+                    "uaid": uaid
+                })
+
+    return results
 
 
 def find_lore_items(
@@ -55,7 +154,20 @@ def find_lore_items(
 
 if __name__ == "__main__":
     folder = r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Content/Maps/World/L_World/_Generated_"
-    entries = [
+    
+    # Extract all journal entries automatically, filtered to only JOURNAL_Know_ entries
+    print("=== All Journal Entry Keys (JOURNAL_Know_ only) ===\n")
+    journal_entries = find_all_journal_entries(folder, filter_contains="JOURNAL_Know_")
+    
+    # Output in JSON format with transformed keys
+    print(f"Found {sum(len(entries) for entries in journal_entries.values())} entries across {len(journal_entries)} unique keys.\n")
+    for key, entries in sorted(journal_entries.items()):
+        transformed_key = transform_key(key)
+        for entry in entries:
+            print(f"{{\"key\": \"{transformed_key}\", \"label\": \"{entry['label']}\", \"value\": \"{entry['uaid']}\"}},")
+    
+    print("\n=== Legacy Search Mode ===\n")
+    legacy_entries = [
         {"key": "Withering_4", "value": "Battered Diary"},
         {"key": "Zogres_3", "value": "Captain Rainer's Journal"},
         {"key": "Withering_3", "value": "Dragon-embossed Journal"},
@@ -88,8 +200,8 @@ if __name__ == "__main__":
         {"key": "Withering_6", "value": "Withered Diary"},
         {"key": "The_Rising_Dead_2", "value": "Withered Journal"},
     ]
-    keys = [entry["key"] for entry in entries]
-    map = {item["key"]: item["value"] for item in entries}
+    keys = [entry["key"] for entry in legacy_entries]
+    map = {item["key"]: item["value"] for item in legacy_entries}
 
     matches = find_lore_items(folder, keys)
 
