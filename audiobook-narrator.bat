@@ -1,1 +1,0 @@
-uv run python .\src\narration\coqui-ai\audiobook-narrator.py

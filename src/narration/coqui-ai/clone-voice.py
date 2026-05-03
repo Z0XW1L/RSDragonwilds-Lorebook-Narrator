@@ -22,35 +22,82 @@ tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
 print(tts.speakers)
 print("\n")
 
-# Extract speaker name from speaker_wav
-speaker_wav = "./src/narration/coqui-ai/voices/144862__tekgnosis__medievalspeech.wav"
-speaker = speaker_wav.split('/')[-1].replace('.wav', '')
+# Define speakers
+speakers = [
+    {"type": "wav", "value": "./src/narration/coqui-ai/voices/144862__tekgnosis__medievalspeech.wav", "name": "144862__tekgnosis__medievalspeech"},
+    {"type": "builtin", "value": "Asya Anara", "name": "Asya Anara"},
+]
 
-# Create output directory
-output_dir = f"./src/narration/coqui-ai/output/{speaker}/narration"
-os.makedirs(output_dir, exist_ok=True)
-
-# Get JSON input from narrators.json file
-with open("./src/narration/narrator_pruned.json", "r", encoding="utf-8") as f:
-    data = json.load(f)
-
-# Generate audio for each entry
-for key, text in data.items():
-    if not key:
-        continue
-    file_path = f"{output_dir}/{key}.wav"
+# Process each speaker
+for speaker in speakers:
+    speaker_name = speaker["name"]
     
-    # Skip if output already exists
-    if os.path.exists(file_path):
-        print(f"Skipped {file_path} (already exists)")
-        continue
+    # Narration
+    output_dir = f"./src/narration/coqui-ai/output/{speaker_name}/narration"
+    os.makedirs(output_dir, exist_ok=True)
     
-    tts.tts_to_file(
-        text=text,
-        speaker_wav=speaker_wav,
-        # speaker=speaker, # Asya Anara, Gilberto Mathias, Damian Black +
-        language="en",
-        speed=1.0,
-        file_path=file_path,
-    )
-    print(f"Generated {file_path}")
+    with open("./src/mining/extract-locations/lore-data-output.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    for item in data:
+        key = item.get("key", "")
+        text = item.get("text", "")
+        if not key or not text:
+            continue
+        file_path = f"{output_dir}/{key}.wav"
+        
+        if os.path.exists(file_path):
+            print(f"Skipped {file_path} (already exists)")
+            continue
+        
+        if speaker["type"] == "wav":
+            tts.tts_to_file(
+                text=text,
+                speaker_wav=speaker["value"],
+                language="en",
+                speed=1.0,
+                file_path=file_path,
+            )
+        else:
+            tts.tts_to_file(
+                text=text,
+                speaker=speaker["value"],
+                language="en",
+                speed=1.0,
+                file_path=file_path,
+            )
+        print(f"Generated {file_path}")
+    
+    # Repeat
+    output_dir_repeat = f"./src/narration/coqui-ai/output/{speaker_name}/repeat"
+    os.makedirs(output_dir_repeat, exist_ok=True)
+    
+    with open("./src/narration/narrator_repeat.json", "r", encoding="utf-8") as f:
+        data_repeat = json.load(f)
+    
+    for key, text in data_repeat.items():
+        if not key:
+            continue
+        file_path = f"{output_dir_repeat}/{key}.wav"
+        
+        if os.path.exists(file_path):
+            print(f"Skipped {file_path} (already exists)")
+            continue
+        
+        if speaker["type"] == "wav":
+            tts.tts_to_file(
+                text=text,
+                speaker_wav=speaker["value"],
+                language="en",
+                speed=1.0,
+                file_path=file_path,
+            )
+        else:
+            tts.tts_to_file(
+                text=text,
+                speaker=speaker["value"],
+                language="en",
+                speed=1.0,
+                file_path=file_path,
+            )
+        print(f"Generated {file_path}")
