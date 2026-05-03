@@ -44,6 +44,10 @@ def extract_lore_data(lore_folder: str) -> List[Dict]:
                     .replace('_Name', ''),
             'title': title,
             'text': text
+                    .replace('\r\n\r\n', ' ').strip()
+                    .replace('\r\n', ' ').strip()
+                    .replace('\r', ' ').strip()
+                    .replace('\n', ' ').strip()
         })
 
     return results
@@ -182,7 +186,7 @@ if __name__ == "__main__":
             })
 
     # Write to output file
-    with open('lore-data-output.json', 'w', encoding='utf-8') as f:
+    with open('.\\src\\mining\\extract-locations\\lore-data-output.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
     # Generate Unreal sound map
@@ -197,5 +201,5 @@ if __name__ == "__main__":
     if map_entries:
         entries_str = ",".join(f"({entry})" for entry in map_entries)
         full_map = f"({entries_str})"
-        with open('unreal-sound-map.txt', 'w', encoding='utf-8') as f:
+        with open('.\\src\\mining\\extract-locations\\unreal-sound-map.txt', 'w', encoding='utf-8') as f:
             f.write(full_map)
