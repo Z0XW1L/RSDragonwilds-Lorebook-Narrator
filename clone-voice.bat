@@ -1,0 +1,1 @@
+uv run python .\src\mining\extract-locations\extract-lore-data.py

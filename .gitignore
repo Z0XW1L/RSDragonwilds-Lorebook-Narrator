@@ -73,3 +73,9 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Ignore virtual environment folders
+.venv/**
+src/narration/coqui-ai/output/**/*.wav
+src/narration/coqui-ai/voices/*.wav
+src/narration/coqui-ai/voices/sources.md

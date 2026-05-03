@@ -1,0 +1,22 @@
+# Unreal generated folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+
+# Build products
+*.sln
+*.xcodeproj
+*.VC.db
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Specific Unreal Engine generated folders and files
+Build/
+Export/
+Content/__ExternalActors__
+Content/__ExternalObjects__
+Content/Mods/LoreNarratorMod/Sound
