@@ -155,7 +155,7 @@ if __name__ == "__main__":
     lore_folders = [
         r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Content/UI/JournalData/Entries/Knowledge/LoreScraps",
         r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Plugins/GameFeatures/DowdunReach/Content/UI/JournalData/Entries/",
-        r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Plugins/GameFeatures/UmbralSands/Content/UI/JournalData/Entries/"
+        r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Plugins/GameFeatures/UmbralSands/Content/UI/JournalData/Entries/Knowledge/LoreScraps"
     ]
     world_folder = r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Content/Maps/World/L_World/_Generated_"
 

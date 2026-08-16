@@ -16,7 +16,7 @@ local function load_settings()
     Settings = ok and userSettings or Defaults
     setmetatable(Settings, { __index = Defaults })
     print(string.format(
-        "[%s] Settings loaded. volume: %f, playWhenNearLore: %s, searchDistance: %f, checkIntervalSeconds: %f\n, debug: %s, allowMultiSound: %s",
+        "[%s] Settings loaded. volume: %f, playWhenNearLore: %s, searchDistance: %f, checkIntervalSeconds: %f, debug: %s, allowMultiSound: %s\n",
         ModName, Settings.volume, tostring(Settings.playWhenNearLore), Settings.searchDistance,
         Settings.checkIntervalSeconds, tostring(Settings.debug), tostring(Settings.allowMultiSound)))
 end
@@ -38,8 +38,15 @@ RegisterHook("/Script/Engine.PlayerController:ClientRestart", function(Context)
         RegisterHook(
             "Function /Game/Gameplay/World/Misc/BP_LoreItem.BP_LoreItem_C:BndEvt__BP_LoreItem_Interaction_K2Node_ComponentBoundEvent_0_OnInteraction__DelegateSignature",
             function(ContextParam, PlayerParam)
-                print(string.format("[%s] Playing Lore ...\n", ModName))
-                GetActor():PlayLore(PlayerParam)
+                -- Only play if this is the local player interacting
+                local player = PlayerParam:get()
+                if player and player:IsValid() and player:IsLocallyControlled() then
+                    print(string.format("[%s] Playing Lore ...\n", ModName))
+                    local actor = GetActor()
+                    if actor then
+                        actor:PlayLore(PlayerParam)
+                    end
+                end
             end
         )
     end)
@@ -59,4 +66,4 @@ RegisterCustomEvent("LoreNarratorMod_RequestSettings", function(Context, Param)
     end
 end)
 
-print(string.format("[%s] Mod loaded.\n", ModName))
+print(string.format("[%s] Mod loaded.\n", ModName)) 
