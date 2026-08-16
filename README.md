@@ -2,7 +2,7 @@
 
 ## What is This Mod?
 
-The **RSDragonwilds Lore Narrator** is an immersive audio narration mod for RuneScape that brings the game's rich lore to life through text-to-speech technology. Instead of reading static text from lore books, players can now listen to professionally voice-acted narrations while playing the game.
+The **RSDragonwilds Lore Narrator** is an immersive audio narration mod for RuneScape that brings the game's rich lore to life through text-to-speech technology. Instead of reading static text from lore books, players can now listen to voice-acted narrations while playing the game.
 
 ### The Problem It Solves
 
