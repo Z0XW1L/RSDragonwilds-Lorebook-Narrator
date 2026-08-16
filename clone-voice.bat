@@ -1,1 +1,1 @@
-uv run python .\src\mining\extract-locations\extract-lore-data.py
+uv run python .\src\narration\coqui-ai\clone-voice.py

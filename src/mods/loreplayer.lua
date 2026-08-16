@@ -6,7 +6,8 @@ local Defaults = {
     playWhenNearLore = false,   -- true enables proximity based playing, false disables it
     searchDistance = 500.0,     -- lore scanning distance in Unreal units
     checkIntervalSeconds = 3.0, -- how often to check for nearby lore - a very low value may impact performance
-    debug = false               -- prints debug messages if true. Leave it false if not needed to avoid overhead
+    debug = false,              -- prints debug messages if true. Leave it false if not needed to avoid overhead
+    allowMultiSound = false,    -- true disables the check if the sound is already playing. Enable it in multiplayer such that multiple persons can listen to the same lore at the same time.
 }
 local Settings = {}
 
@@ -15,9 +16,9 @@ local function load_settings()
     Settings = ok and userSettings or Defaults
     setmetatable(Settings, { __index = Defaults })
     print(string.format(
-        "[%s] Settings loaded. volume: %f, playWhenNearLore: %s, searchDistance: %f, checkIntervalSeconds: %f\n",
+        "[%s] Settings loaded. volume: %f, playWhenNearLore: %s, searchDistance: %f, checkIntervalSeconds: %f, debug: %s, allowMultiSound: %s\n",
         ModName, Settings.volume, tostring(Settings.playWhenNearLore), Settings.searchDistance,
-        Settings.checkIntervalSeconds))
+        Settings.checkIntervalSeconds, tostring(Settings.debug), tostring(Settings.allowMultiSound)))
 end
 
 local function GetActor()
@@ -37,8 +38,15 @@ RegisterHook("/Script/Engine.PlayerController:ClientRestart", function(Context)
         RegisterHook(
             "Function /Game/Gameplay/World/Misc/BP_LoreItem.BP_LoreItem_C:BndEvt__BP_LoreItem_Interaction_K2Node_ComponentBoundEvent_0_OnInteraction__DelegateSignature",
             function(ContextParam, PlayerParam)
-                print(string.format("[%s] Playing Lore ...\n", ModName))
-                GetActor():PlayLore(PlayerParam)
+                -- Only play if this is the local player interacting
+                local player = PlayerParam:get()
+                if player and player:IsValid() and player:IsLocallyControlled() then
+                    print(string.format("[%s] Playing Lore ...\n", ModName))
+                    local actor = GetActor()
+                    if actor then
+                        actor:PlayLore(PlayerParam)
+                    end
+                end
             end
         )
     end)
@@ -52,10 +60,10 @@ RegisterCustomEvent("LoreNarratorMod_RequestSettings", function(Context, Param)
     ModActor = Param:get()
     if ModActor ~= nil then
         ModActor:UpdateSettings(Settings.volume, Settings.playWhenNearLore, Settings.searchDistance,
-            Settings.checkIntervalSeconds, Settings.debug, {})
+            Settings.checkIntervalSeconds, Settings.debug, Settings.allowMultiSound, {})
     else
         print(string.format("[%s] ModActor was not found. Please file a bug report.\n", ModName))
     end
 end)
 
-print(string.format("[%s] Mod loaded.\n", ModName))
+print(string.format("[%s] Mod loaded.\n", ModName)) 

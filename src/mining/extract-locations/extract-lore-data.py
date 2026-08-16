@@ -1,5 +1,6 @@
 import json
 import os
+import re
 from typing import Dict, List, Tuple
 
 
@@ -34,6 +35,7 @@ def extract_lore_data(lore_folder: str) -> List[Dict]:
             desc = page_descriptions[0].get('Description', {})
             text = desc.get('LocalizedString', '')
 
+        pattern = r"(?:(?<=[.!?]\s)|(?<=^))([A-Za-z]+)\.(?=\s|$)"
         results.append({
             'name': name,
             'key': key
@@ -43,7 +45,11 @@ def extract_lore_data(lore_folder: str) -> List[Dict]:
                     .replace('_Title', '')
                     .replace('_Name', ''),
             'title': title,
-            'text': text
+            'text': re.sub(pattern, r"\1 -", text
+                    .replace('\r\n\r\n', ' ').strip()
+                    .replace('\r\n', ' ').strip()
+                    .replace('\r', ' ').strip()
+                    .replace('\n', ' ').strip())
         })
 
     return results
@@ -146,14 +152,21 @@ def find_coords(world_folder: str, uaids: List[str]) -> Dict[str, Tuple[float, f
 
 
 if __name__ == "__main__":
-    lore_folder = r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Content/UI/JournalData/Entries/Knowledge/LoreScraps"
+    lore_folders = [
+        r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Content/UI/JournalData/Entries/Knowledge/LoreScraps",
+        r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Plugins/GameFeatures/DowdunReach/Content/UI/JournalData/Entries/",
+        r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Plugins/GameFeatures/UmbralSands/Content/UI/JournalData/Entries/Knowledge/LoreScraps"
+    ]
     world_folder = r"C:/prj/app/FModel/Output/Exports/RSDragonwilds/Content/Maps/World/L_World/_Generated_"
 
-    # Extract lore data
-    lore_data = extract_lore_data(lore_folder)
+    # Extract lore data from all folders
+    all_lore_data = []
+    for lore_folder in lore_folders:
+        lore_data = extract_lore_data(lore_folder)
+        all_lore_data.extend(lore_data)
 
     # Get names for UAID search
-    names = [item['name'] for item in lore_data]
+    names = [item['name'] for item in all_lore_data]
 
     # Find UAIDs
     uaids_map = find_uaids(world_folder, names)
@@ -168,7 +181,7 @@ if __name__ == "__main__":
 
     # Build final results
     results = []
-    for lore_item in lore_data:
+    for lore_item in all_lore_data:
         name = lore_item['name']
         uaids = uaids_map.get(name, [])
         for uaid in uaids:
@@ -182,7 +195,7 @@ if __name__ == "__main__":
             })
 
     # Write to output file
-    with open('lore-data-output.json', 'w', encoding='utf-8') as f:
+    with open('.\\src\\mining\\extract-locations\\lore-data-output.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
     # Generate Unreal sound map
@@ -197,5 +210,5 @@ if __name__ == "__main__":
     if map_entries:
         entries_str = ",".join(f"({entry})" for entry in map_entries)
         full_map = f"({entries_str})"
-        with open('unreal-sound-map.txt', 'w', encoding='utf-8') as f:
+        with open('.\\src\\mining\\extract-locations\\unreal-sound-map.txt', 'w', encoding='utf-8') as f:
             f.write(full_map)
