@@ -153,24 +153,6 @@ The mod currently includes voice models from:
 - **Data Mining** - Extraction and mapping of game lore assets
 - **Automation** - Scripted release and packaging workflow
 
-## Roadmap
-
-### Short Term
-- Expand Fellhollow lore book coverage
-- Implement audio queue management
-- Add UI progress indicators
-
-### Medium Term
-- Additional language support
-- More voice options
-- Proximity-based audio triggering
-
-### Long Term
-- Community voice contributions
-- Advanced audio effects (environmental audio, music)
-- Integration with other game mods
-- Configuration UI for players
-
 ## Credits & Attribution
 
 ### Technology
@@ -184,7 +166,7 @@ The mod currently includes voice models from:
 - Additional voice contributors acknowledged in release notes
 
 ### Project Team
-Built by the RSDragonwilds modding community
+Built by me, Z0WX1L, just for the fun of it.
 
 ## Getting Started
 
